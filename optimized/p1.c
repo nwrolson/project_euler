@@ -9,7 +9,7 @@ int computeSum(int bound, int k){
 }
 
 int main() {
-	//using inclusion-exclusion principle to 
+	//find sums of 3 and 5, then subtract the overlap between them
 	int result = computeSum(N, 3) + computeSum(N, 5) - computeSum(N,15);
 	printf("Bound: %d Sum: %d \n", N, result);
 	return 0;
